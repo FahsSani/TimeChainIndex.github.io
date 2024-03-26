@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Codes/favicon.ico">
+    <title>Timechain Index</title>
+    <link rel="stylesheet" href="Codes/styles.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="Codes/stylesmobile.css" />
+    <link rel="stylesheet" type="text/css" href="Codes/DataTable/jquery.dataTables.min.css">    
+    <link rel="stylesheet" type="text/css" href="Codes/DataTable/colReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="Codes/DataTable/fixedHeader.dataTables.min.css">
+    <style>
+    </style>
+    </head>
+<body>
+    <button id="toggle-btn" onclick="toggleMenu()">E
+    N
+    T
+    I
+    T
+    I
+    E
+    S</button>
+    <div id="menu">
+        <!-- Populated menu content will go here -->
+    </div>
+    <div id="main"></div>
+    <div id="topContainer">
+        <div id="topmenuContainer">
+            <div id="dynamicMenu">
+                <div id="menuTitle">Timechain Index</div>
+                <div class="arrow-down" id="menuArrow"></div>
+                <div id="ExpandedMenu1"></div>
+            </div>
+        </div>
+        <div id="searchContainer">
+            <!-- Search Tab -->
+            <div id="searchTab" class="tab">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Fetch addresses details (comma-separated): address 1, address 2, address 3 ...">
+                    <div class="fetch-arrow" id="searchFetchArrow">➤</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dataContainer">
+        <!-- Data Tab -->
+        <div id="dataTab" class="tab">
+            <div class="data-container">
+                <div id="DataTableContainer" class="DataTableContainer">
+                    <div id="title">                          
+                        <span id="title"></span>
+                    </div>
+                    <div class="dt-buttons">
+                        <div id="datatables_buttons_info" class="dt-button-info" style="opacity: 0; font-size: 0px; display: none;">
+                    </div>
+                    <table id="datatable" class="display" style="width: 100%;">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                            <tfoot style="display: none;">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomContainer">
+        <div class="sub-container center-container">
+            <p id="bitcoinPrice">Bitcoin Price: Loading...</p>
+            <p id="satsPerDollar">Sats/$: Loading...</p>
+            <p id="blockHeight">Block Height: Loading...</p>
+            <p id="halvingcountdown">Blocks Till Halving: Loading...</p>
+            <p id="currentsupply">Current Supply: Loading...</p>
+            <p id="realfinalsupply">Final Supply: Loading...</p>
+            <p id="feeRates"></p>
+        </div>
+    </div>
+    <div id="popupContainer">
+    </div>
+    <script src="Codes/DataTable/jquery-3.6.0.min.js"></script>
+    <script src="Codes/DataTable/jquery.dataTables.min.js"></script>
+    <script src="Codes/DataTable/dataTables.colReorder.min.js"></script>
+    <script src="Codes/DataTable/dataTables.fixedHeader.min.js"></script>
+    <script src="Codes/DataTable/dataTables.keyTable.min.js"></script>
+    <script src="Codes/DataTable/dataTables.select.min.js"></script>
+    <script src="Codes/DataTable/jszip.min.js"></script>
+    <script src="Codes/DataTable/pdfmake.min.js"></script>
+    <script src="Codes/DataTable/vfs_fonts.js"></script>
+    <script src="Codes/DataTable/dom-to-image.min.js"></script>
+    <script src="Codes/DataTable/jspdf.umd.min.js"></script>
+    <script src="Codes/DataTable/dataTables.buttons.min.js"></script>
+    <script src="Codes/DataTable/buttons.html5.min.js"></script>
+    <script src="Codes/DataTable/axios.min.js"></script>
+    <script src="Codes/DataTable/dom-to-image.min.js"></script>
+    <script src="Codes/DataTable/chart.js"></script>
+    <script src="Codes/shared.js"></script>
+    <script src="Codes/main.js"></script>
+    <script src="Codes/cal.js"></script>
+    <script src="Codes/index.js"></script>
+</body>
+</html>
